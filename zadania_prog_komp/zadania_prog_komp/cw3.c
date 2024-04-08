@@ -10,7 +10,7 @@ int div3or5(int x) {
 	return (x % 3 == 0) || (x % 5 == 0);
 }
 
-//zad2 - obliczanie sumy i Å“redniej z liczb podz przez 3 lub 5
+//zad2 - obliczanie sumy i œredniej z liczb podz przez 3 lub 5
 void sum_avg_n() {
 	int n, sum = 0, count = 0; //sum - suma liczb, count - licznik podzielnych
 	printf("podaj n: ");
@@ -60,7 +60,7 @@ void monte(unsigned n) {
 	for (unsigned int i = 0; i < n; ++i) {
 		x = (float)rand() / RAND_MAX;
 		y = (float)rand() / RAND_MAX;
-		if (x * x + y * y <= 1) { ++m; }
+		if (x * x + y * x <= 1) { ++m; }
 	}
 	printf("%f", 4 * (float)m / n);
 }

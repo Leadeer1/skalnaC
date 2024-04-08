@@ -5,6 +5,8 @@
 #include"cw1.h"
 #include"cw2.h"
 #include"cw3.h"
+#include"cw4.h"
+#include"cw5.h"
 
 int main() {
 	/*cw1_zad1();
@@ -30,7 +32,8 @@ int main() {
 	if_pow2(unsigned int x);
 	test_if_pow2();
 	monte(unsigned n);
-	random_nums();*/
+	random_nums();
+	test_quick();*/
 	
 	return 0;
 }
