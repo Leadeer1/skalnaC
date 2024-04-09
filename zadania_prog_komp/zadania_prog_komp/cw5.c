@@ -30,17 +30,17 @@ void bubble_sort(int a[], int n) {
 	}
 }
 
-void bubble_test() {
+void bubble_test(void (*sortalg)(int a[], int n)) {
 	int a[MAX];
 	srand((unsigned)time(0));
 	for (int i = 0; i < sizeof(a) / sizeof(*a); ++i) {
-		a[i] = 9 + rand() % 100 - 9;
+		a[i] = 9 + rand() % 100-9;
 	}
 	printf("Nieposortowane:\n");
 	for (int i = 0; i < MAX; ++i) {
 		printf("%d, ", a[i]);
 	}
-	bubble_sort(a, MAX);
+	sortalg(a, MAX);
 	printf("\nPosortowane:\n");
 	for (int i = 0; i < MAX; ++i) {
 		printf("%d, ", a[i]);
@@ -71,7 +71,7 @@ void testimie() {
 
 void QuickSort(int tab[], int l, int r) {
 	if (l < r) {
-		int piv = tab[(r+l)/2];
+		int piv = tab[(r + l) / 2];
 		int i = l;
 		int j = r;
 
@@ -97,7 +97,7 @@ void test_quick() {
 	for (int i = 0; i < MAX; ++i) {
 		a[i] = 9 + rand() % 100 - 9;
 	}
-	
+
 	printf("Tablica przed sortowaniem:\n");
 	for (int i = 0; i < MAX; ++i) {
 		printf("%d, ", a[i]);
